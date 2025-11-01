@@ -1,0 +1,97 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-tabs button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.promo-section {
+  flex: 1;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.promo-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.promo-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.promo-section img {
+  background: 100%;
+}
+
+
+.full-width {
+  grid-column: span 2;
+}
+
+
+.next-button {
+  width: 100%;
+  background-color: #e53935;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #d32f2f;
+}
