@@ -1,9 +1,165 @@
-body {
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f8f8f8;
 }
 
 .container {
   display: flex;
   height: 100vh;
+}
+
+/* LEFT SECTION */
+.left {
+  flex: 1;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo img {
+  width: 25px;
+  margin-bottom: 30px;
+}
+
+.left h1 {
+  font-size: 2rem;
+  color: #1e2a47;
+  margin-bottom: 8px;
+}
+
+.left p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.login-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.login-options button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-options button.active {
+  background: #ffecec;
+  color: #e02626;
+  border: 1px solid #e02626;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background: #f2f5fa;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field .eye {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-btn {
+  background: #e02626;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #c61f1f;
+}
+
+.forgot {
+  color: #304674;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* RIGHT SECTION */
+.right {
+  flex: 1;
+  background: linear-gradient(135deg, #b8cbb8, #808080);
+  position: relative;
+  overflow: hidden;
+}
+
+.red-circle {
+  position: absolute;
+  bottom: -200px;
+  right: -200px;
+  width: 800px;
+  height: 800px;
+  background: #e02626;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right img {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  width: 400px;
+  z-index: 2;
+}
+
+.right .content {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  z-index: 3;
+  color: white;
+  max-width: 400px;
+}
+
+.right .content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.right .content p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  opacity: 0.9;
 }
