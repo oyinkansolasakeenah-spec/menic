@@ -3,341 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MENIC</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <title>InvestNow Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
-    <link rel="shortcut icon" href="menic.jpg" type="image/x-icon">
   </head>
   <body>
-    <header class="head">
-      <div class="logo">
-        <h3><i class="fa-solid fa-dollar-sign"></i>MenicInvestment.ng</h3>
-      </div>
-      <nav class="nav">
-        <div class="dropdown">
-          <ul>
-            <li class="menic manual-funds"><a href="mutual">Mutual fund</a></li>
-            <div class="dropdown-content">
-              <a href="#">Fixed Income Fund</a>
-              <a href="">Money Market Fund</a>
-              <a href="#">Wealth for Women Fund</a>
-              <a href="#">Sukuk Fund</a>
-              <a href="#">Children Investment Fund</a>
-            </div>
-            <li class="menic"><a href="trusts">Trusts</a></li>
-            <li class="menic"><a href="securities">Securities</a></li>
-            <li class="menic"><a href="analysis">Analysis</a></li>
-            <button class="signin-btn">Sign in</button>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="invest" id="mutual">
-      <div class="invest-class">
-        <h1>Investing Made Easy</h1>
-        <p>
-          All your investment needs are now just one tap away, giving you
-          complete control of your investment portfolio.
-        </p>
-        <button class="btn"><a href="./create-account.html">Create Free Account</a></button>
-        <div class="app-buttons">
-          <button class="side-btn android">
-            <i class="fa-brands fa-google-play"></i>Get on Android
-          </button>
-          <button class="side-btn ios">
-            <i class="fa-brands fa-apple"></i>Get on iOS
-          </button>
-        </div>
-      </div>
-
-      <div class="hero-image">
-        <img
-          src="https://investnow.ng/static/media/banner3.ec2064d1faffbae8d1361cf820238a16.svg"
-        />
-      </div>
-    </section>
-
-    <section class="portfolio" id="trusts">
-      <div class="portfolio-left">
-        <img
-          src="https://investnow.ng/static/media/banner4.05a4832e94c7c4e90ff093fe98f3d6c2.svg"
-        />
-      </div>
-      <div class="portfolio-right">
-        <h2>Track and monitor your portfolio with ease</h2>
-        <p>Get real-time information on your investments in one place.</p>
-        <a href="#" class="start-investing">Start investing →</a>
-      </div>
-    </section>
-
-    <section class="pack" id="securities">
-      <div class="loan-left">
-        <h2>Never run out of cash to keep your business running</h2>
-        <p>
-          With Asset-Backed Loan, you can access a loan of up to 95% of your
-          investment value to meet your urgent needs
-        </p>
-        <a href="#" class="get-loan">Get a loan →</a>
-      </div>
-      <div class="loan-right">
-        <img
-          src="https://investnow.ng/static/media/banner5.b291c08668af531607ea07fe39067a3b.svg"
-        />
-      </div>
-    </section>
-
-    <section class="start-today" id="analysis">
-      <div class="insight-content">
-        <h2>Smart Investment</h2>
-        <p>
-          Looking to do more with your money? Let’s help you kickstart your
-          investment journey.
-        </p>
-        <div class="insight-grid">
-          <div class="insight-card">
-            <img
-              src="https://investnow.ng/static/media/step1.3f04207bd13ddc62fee92b3878994106.svg"
-            />
-            <h5>Step 1</h5>
-            <h3>Choose a product</h3>
-            <p>Select a product from our array of Investment offerings.</p>
-          </div>
-
-          <div class="insight-card">
-            <img
-              src="https://investnow.ng/static/media/step2.b36592e45ddb5872469dd928daea5a65.svg"
-            />
-            <h5>Step 2</h5>
-            <h3>Open an account</h3>
-            <p>Simply provide us with some information about you.</p>
-          </div>
-
-          <div class="insight-card">
-            <img
-              src="https://investnow.ng/static/media/step3.fcd24667920f929d02abc101c6ba3abb.svg"
-            />
-            <h5>Step 3</h5>
-            <h3>Fund your account</h3>
-            <p>
-              Put funds into your account with your debit card or bank account.
-            </p>
-          </div>
-
-          <div class="insight-card">
-            <img
-              src="https://investnow.ng/static/media/step4.0f669e5049ae28e0951272b24532b533.svg"
-            />
-            <h5>Step 4</h5>
-            <h3>Recieve returns</h3>
-            <p>Start recieving returns!</p>
-          </div>
-        </div>
-      </div>
-      <button class="btn acc"><a href="./create-account.html">Create Account</a></button>
-    </section>
-
-    <section class="investment-options" id="services">
-      <h1>Available Investment Plans</h1>
-      <div class="options-container">
-        <div class="option-card">
+    <div class="container">
+      <div class="left">
+        <div class="logo">
           <img
-            src="https://investnow.ng/static/media/bag.774cea847bd52a83fe01ce17e5a9c6da.svg"
-            alt="Mutual funds icon"
+            src="menic.jpg"
+            alt="Logo"
           />
-          <h3>Mutual funds</h3>
-          <p>
-            Put your money to work with our Mutual Funds and start earning
-            competitive returns.
-          </p>
-          <a href="./login.html" class="get-started">Get started →</a>
         </div>
 
-        <div class="option-card">
-          <img
-            src="https://investnow.ng/static/media/hand.829f8bd240490f15c45af9ffbeae2a9f.svg"
-            alt="Trusts icon"
-          />
-          <h3>Trusts</h3>
-          <p>
-            Build your wealth and preserve your legacy to last for generations.
-          </p>
-          <a href="./login.html" class="get-started">Get started →</a>
+        <h1>Log in to continue</h1>
+        <p>Securely login to InvestNow.</p>
+
+        <div class="login-options">
+          <button class="active">Login with email</button>
+          <button><span></span> Login with phone</button>
         </div>
 
-        <div class="option-card">
-          <img
-            src="https://investnow.ng/static/media/chart.7b4425c3da7bf80f5f36ff0d5b8e1339.svg"
-            alt="Securities icon"
-          />
-          <h3>Securities</h3>
-          <p>Trade stocks like a pro on the floor of the Nigerian Exchange.</p>
-          <a href="./login.html" class="get-started">Get started →</a>
-        </div>
-      </div>
-    </section>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email address" />
 
-    <section class="testimonials" id="testimonials">
-      <h2>What Our Investors Say About Us</h2>
+          <label for="password">Password</label>
+          <div class="password-field">
+            <input type="password" id="password" placeholder="Password" />
+            <span class="eye"></span>
+          </div>
 
-      <div class="testimonial-container">
-        <div
-          class="testimonial-card animate__animated animate__fadeInUp animate__delay-1s"
-        >
-          <p>
-            They pay good attention to me. They also provide quality and timely
-            service which has, in no small measure, enabled me to achieve the
-            much-needed objective of good returns on investment.
-          </p>
-          <h4>Jimmy Oshinowo</h4>
-        </div>
+          <button type="submit" class="login-btn">Login</button>
+        </form>
 
-        <div
-          class="testimonial-card animate__animated animate__fadeInUp animate__delay-2s"
-        >
-          <p>
-            I’ve had a very good experience with United Capital Plc. The company
-            has related with me very well and has really added value to my
-            business. They take pride in putting your interests first.
-          </p>
-          <h4>Mrs Aremu Ejiro</h4>
-        </div>
-
-        <div
-          class="testimonial-card animate__animated animate__fadeInUp animate__delay-3s"
-        >
-          <p>
-            I’ve invested with United Capital for a while now, and I’ve been
-            telling others to join in. If they weren’t good at what they do, I
-            wouldn’t have been transacting with them for over eight years.
-          </p>
-          <h4>Chief Chimezie Eleberi</h4>
-        </div>
-      </div>
-    </section>
-
-    <section class="app-promo" id="app">
-      <div
-        class="app-content animate__animated animate__fadeInLeft animate__delay-1s"
-      >
-        <div class="stars">⭐⭐⭐⭐☆</div>
-        <h2>4/5 ratings on app stores</h2>
-        <p>
-          <strong
-            >Enjoy an optimized user-experience with the InvestNow app.</strong
-          >
-        </p>
-        <div
-          class="app-buttons animate__animated animate__fadeInUp animate__delay-2s"
-        >
-          <button class="side-btn android">
-            <i class="fa-brands fa-google-play"></i>Get on Android
-          </button>
-          <button class="side-btn ios">
-            <i class="fa-brands fa-apple"></i>Get on iOS
-          </button>
-        </div>
+        <a href="#" class="forgot">Forgot password?</a>
       </div>
 
-      <div
-        class="app-image animate__animated animate__fadeInRight animate__delay-3s"
-      >
+      <div class="right">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2>Relax while your money works for you.</h2>
+          <p>InvestNow provides you access to the best investment plans</p>
+        </div>
         <img
-          src="https://investnow.ng/static/media/banner6.fe8973aeffb4e06677f379858641817a.svg"
-          alt="InvestNow App Preview"
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAygMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAECBwj/xAA8EAACAQMDAQYCCAQFBQEAAAABAgMABBEFEiExBhMiQVFhMnEUIzNCUoGRoQexwdEVQ3Lw8SQ0U2JzJf/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwQABf/EAB4RAAICAwEBAQEAAAAAAAAAAAABAhEDITFBEiIE/9oADAMBAAIRAxEAPwD2C0+wrajg1q1/7etltq/OgAFv8CJifw1R9Kk7q0uE8mmY/vV0vo2aFyx6rVP0+0K28pHOZG/nXPgQa0RjenYduM1xjN+3ePhRnmtPmK5OfPg4qEvuvAcnHTFAIRdROt1Hk+HHFTsx3IFGKHyz3pLHhQMUTH4pufKuoKF+u3DrGibjkt50XOxh0olupWlest3l/bRDzbmjO0MvdWCoOM8UGFDTsf4rVm9WJq32o6VU+xi//mKx86t1qOBRXASC16iiU6UOvlRCfDXIU01DTdKIah5vTzonCHXTiyl/00Z2XG3Qrf5UB2gP/QSn2pl2fGzRbUHqVFHwAZcHEEv+k0ij6Cnd4cWsp/8AWksfQUoyBL77YfKoR0qW85nFQO6xpvcgL6k0oxsfEK2T9YayxAvlZrVg+w8jzNaP2h+dBOwtV0lzWbqjzWZogLfbcW9YOWAIrLf/ALYe9b4VgTTkwa/+xf5GqtAj/R3WH4i5qz3kyMCgbrS6ONIxhBgUGxqK0uj3kkrOxUmuBot2s+8gYzVqQcV1XI4rC2FwJWbZW47SdA5aM5NWYAV0AD1FccUX/Br2bVFuXj2xIOPXNC9r1mPdJHG5HXgV6Nt4xSzWbq2srcySrGXbhAR8RoSGjvRB2VjKaTACMHb5irLbCqHZdoJbfCkiQZzjbinll2phJ+sgYD1U0iyxGeGZal6iiU+Gk9prFjcEbZ9h9HGKbowKAg8eo6U6afCbTXTTf7xVP7Y6/dW0BtNDktDeMcNJMSViHyA5P5ik+u/xAmlv7/TtPtWiitvC87sAz+pC+Q96pT9roYLoLNYSyxsfE8ZBYe+KSeStItjw2rZHqQ7fSyuzaiL2F+e7gk7vH5YFD6P2217Rrp4muJ1dTiS2vGLKB6gZq5aXPDqEIutPkLRD4htwyn3FddpdGsNQ0qSa+TbLGMxzD4g3l/xSRySfSksMPCfQv4l2uqxmw1VBbXLABZAfq3P9Ks8PI/cV86zh0ZkbCSBfLofavQ/4bdqLuS3ms9QkadIYiySOcsMHGCf1q1+mevC76jNHCzyTOEVF3E+1Vi1vJNZ1Bc+G3B4X+9L9Z1SS/laBGJDEbyPP0A9qJtZBY224DDY8qzTyWzVjxUtlj7OTpDrE1vFwN3lTnWbL6POJkGI5efkaqvY5JHvDPJ1PNXjWPrLDA+4wb+n9abHIXNHYgJqQDiojxRCgbR8qsZy1wj/pxQN7O5O1fKj4vsfypZcnxmnEB+vWsPSsrTcilHNocrXQqOPhcV0OtcKdiugK4zW8kUTiQGvPe1dw0usymRsrD9XFH+5NegZrzTtbuTX5lbgEhh+dRzuol/50nIWWuppvKuRnPOaY/TFXkEY+dJNW0ma4T6VYnEw+JfJxSWPVGBaGUNHKvxI/BFZN9N1F+t9SQ8bqb2vaI2EiRi6KLLnwNyuPzry9L8qSyvxTTtCbVre0trmVknaMeLBwnmxb1JPT0ApoO+CSirpno2p2Vmui3EkYjLyg/WgZyx8815JYpcWWsut3YtIkjYDe3tmnha803QRaf4iLmykZWj4yQc5GGz60+7PXUNzbhZhhh+IVzlbCo0gbs+8lhqW+JG7iQYlR1IOPlVi7RjOkOyn4SMYP6UTHFZY4A4HWl/aR1FqqRv4CP+KrFUSk7PNdXiSUCQAb1B3Mep6+VHaBB/hmiO2R3t02cj8C8Afrk121uJ5doHxnAzwM1NfOveiGP7OJdoo5JfmhIQ/Vkunp9ZmmFxmTCjpS21cg8U7soO9YZHFZ0aqLB2ahMSLx6VbpB3lpKp80IpBp0fdotM5rnu7djnywKeDpkcivYlogdKgHUCiK2Ixstkf2NKbkkOfCT8hTSHmMCpGVdvIFMTK1NcFB9m1Az3s/3FwKstzGhB8IpTdwr5LQaYyYqF7detdreXPUmpXhAU4FcbMKRSbHolS+mYdBXRvZvao7dPq8+9dlM0yBRptQlPFU/tpmTUIbgjl49p/I1a3Wq92uhzYxSgfBJ/MVPKriymLUkKNPuCDtbHpWa32fsNZgYlTHcqPBIpwaXpJsZTmmMV6AOtZY6Nj2VXQuy2r3N1cgGFo7Jw1wjPtfu8/EF8wcEUaNUe8u5fpsUNwrHBEkY4Hp7U2vbuW3iubyz3CSSExOVHkWH9qr9peRqCsyAnzY0zkqBFOya5tIInX6JK6QZ3PblyVJ9s9Ka6Xc90Y1+8PipLPcRlt0eMe1aguWLZ5qcplFEvv0hXCkHGfQ1qa9gt7XNw+FzyxONo9flVftLlmQKfKtfSZlupxIp7oIBGw558/mDnFN9aB8k63yyRz3EMpaF2PcNnqvrilBYtISaklkGzaoCqBwAMCoIzk1zFj0Y2Iy2Kt+kQ7iDjjFVTTVy658zV60mPZEDjrSjMZxDGBjFD3Mu98D4V/nRNw4SIgfERS5a04oemXLPw6X7RaIodftBRNXMxaIDlBUp6VBaHKVM3SnJgdx50uuDTC461Rf4ldoJ+z2lrd2sauxdVwTjrQYyLARkVEyV47D/FPVJZo4vocQ3MB9ofX5V65ZytLaRSv8TLkilZROwiJfq1rqTiubc5HyNdvg1wpBIPCaW6zbG50e4jUZcJuX5jmmcvIxXUQ6D+dBqxk6PJJ5AArDpimenWZdRPckheoTpx6mutQ0j6L2ieycExBu+jz5p6UVMss7YiQBPJm+Ee59fYV5uVtOkehDasLguYwoVVGw8YI8J/Lzqq9ttPsLGWC80/ckNznfAf8AKfzAPmvp6U9UxJJ3SyF5G4yOrf79KQ9sS7G2VopERVPLggfvRxu1TOaf0V6K5iHn+9MbF0lddlAW8EUjAZUk+hqx6ZYoGG1R+Rrml4UTG+m2IkQMM5PFD6+RatHAMbsb2/p/WrNpNqFhyWAxVH7Q3Xfaxdc8CQqPkMUwjkRM/g9zW4RzQxfJHyoy0BPXpRYEONMXxqavOln6sZ6AZqpaPb7iMjqauCr9HgVB8RH7U0I26Bkl8o3LJ3pkb9KhXpXQ+zauF6VsSpUYG7dncf2lE0ND9pRVEBZbQhYcscDNDy3e8lYzxnrmgdQu9sIhjPnyaASQ4yWwBTiUOydyctzXm/8AGPT72/0aOKxtpLhhKpIjGcCrklw5PhPHrUkt1iM5OfauBR5N2Y/hRuhhutYu3jmOHEUWPB6Z9a9QNuLCyG58xRry+KxZS3wgn2qaN5cFSE2+/NdphToistskAniYPG3Rga6Y+L50TA9tbwvHsSNXPO0YGahdFZwY5FPzoUGwZz4sV130cKh5XCrnz8620TZJXDP5KCOKFS2kEhlnSUt0XA5+dZ8mWtRLQhfSDUZLe/l79INssKlFaXjcDz09Bj96RvYJI+67umdB9yIY/c/2p+1m3O/vPFzmTC1gg0tV+scM3mVJ4rHkUpvZqxtRVISWdpY2Nws8ELmVQQGd89fOmcbSnxFEjQ+YXk1J3lnDxBCSR95qjdurbgc0iXzoZ/rZKbmSNMIwRR6DmhJ9RlXkurf6lBqCaUnPtS6d977R08zR+gUdzXUkkgHwqeePSqD2olFt2glX7siq4P5YP7irbFMz3Eshzt24Uf8AqP7nP6Um1vQl1aaK5juhFIsYjw65GASc/PmmxyV/oLVCyFtwXFWHSbTeuSK70jslHHGrXN80n/zQAfvV+0PQrO3UMI93oXOaNnOSRx2Z0h5sMQFT1IprrsaxXqonCiNcD0p5YhQAqAbV8wMVX9ZmE2oSlei4Qe+K1YV6ZMs3JgX+UfnXK9K3/lH51yp4q5ImgHjJqbNRW/QmuyeTXHAd7q1mjmWWdQvlSSXtfp7XsNrHudnbA4wK87v9RllLvK5x5DPFc9j0N3qrXs+SiH6sGjYp7ILgMyxxfe4qWZxuAHIHApTor9480p+GMbR86JuJ8EnyzRCFfSRH51o3M83gjbYn4+p/SlPe73ycj2qY3Kwxl5HCgdST0FcChkkkcXQNK/425J+VSwNuXv5DlfuL+KlunpPf/XNG8NmB4WPDTD2Hkvv5022NLg4wg6DGAKjkyVpFIR9YLIZpgCq+Ln4a5kiuIlHfXZQHyzRkxmSMC3AjXzkbzpeWGSZpFmP4sdKySLoyHexyJWcA9WFZc2yuQ2ArDzAqWPYPgYDPpU4XI9am9jrQra2I5Bz8qieMjjJprIgUcVCkOVaRhjFLQ1iW5yq7fM0FMhEBI6uduf5/tRt0d0rMPXiiBZ73RCfDEMOffqf7flSjoVQWR74gf+Ef1NCd2Btz59atmkxR3Uty+NrBSm32xxSaW023O1gAu45opAsI0WxLjvpWKwr0yetWyz3TKAvghHn60ktni7oGbiFDhUHnQup9trawOy1TvHUYH4B/eqwi5OkSlJel+71La1aToqLkZqmzXsC5Mk6ZPXnzqqvq+ra945rhxD1WNDtX9KXzaXqCzDcW2ZyCK344fK2ZJStl2Go2bIF73BLfLNNk095bdZbVxKCu4r5j/ZrzV9OvwN8Su205Ip7oy67FGn0FzuVBuUn4fPn9apQtlpgBUEMMHPQ1wxO4/OitLN7fWxXUYQt0gz3gGN3tQpIzQCmfPGr3JZhDGeW44q3dn0FpaqFGCqiqLpqNcX6M3ODk1fLHx7Y15LkL+9GgIv8AoidzpEbP8UpLmh7qbL4B4ou+cQQJEMDYoX9qTyOI0aVzgdFyetcEnM6RRmSVtiDzPn8qL0/SjqBS81RWW1BzFbZwZPdvQfzqDQtLN8yanqIZ4wfqIWGFOPvY8x6frVqXuJAWLc+eTUcmStIpGJKtygXKrgD26e1C3lxenBhGB7GtSshYBido9uKxe6X4ZvCfu+VZJSLRQEfpbHxqH9nNdo5TiS3XHsKKymMkb8e9Yr5+AfkamOcRiFzlBtPpiiQu0ZJqNSC3K4NdzP3aZAoHEEuZZljUcms1Vlt7cRg4PnXel4Cy3kucdEFK76fv7o7+UU7m+VBhXSC2izOHkHgiXvH/AKD9cUbnZGFPJEe5vdmPH7UJqLdxBFB0kuZAZMeQ9KhkuxtLk4MkhYc+Q8I/lQXRnwMtZPov1g4LE5+XNJ9Vv17wunJ/DQ2oar4THEfFsI+WeKSGdpJOWya0Y8bkyUp0T39/eXC7FcquOcdar08cqkO2flTl3PGSAPaoRsZsyZx8q2qCjwzSk2B6fqdzYPuiJA9CMirrpHaaC6CLdrhuBkDiq6FtTx9HZmPQYpvp1osigpY598YqiRMvGmvbStujAYZ4ppY2ibRMibWZRnHnVQtYbu2j3QxkY6E1b9Ja5gjWKdAQAF3Dzx1ogGSLjG5eRVbnj2zSAdAxFWidwsLPkcAmqoXZiSep5pWFHzp2fAErtjmr92Qtxdauhb7OEd439K860iXY+M+der9jolsNDe/m+O5PgU/hFEKHWpTIB3kzbV8lHVqA0OxfXr5prlSlhbnkdN58l/vQsdrfdpLwpC7JCrYeUDgew9TV5s9OaytkhVY1hRcJHnJ+Z9T71HJOtIpGNmStETtx8IAVU6CoJnMWAisntW5rpmlWMR7NvUYwDQmq99GkbiTrztxWSUi6Q0t5S0Y5DDzDCpGNt9+HHuKB0Jzcwv6iiWmHwuMCp2NRIRD5DJqOTb6YqA4RsH4GqORmHQ4FAJN3m1gQcihr647zbEh8TsBQ0s7IRzx71FbSkTPcv0jHHz8qVjRQ3urhba3ESnwxr+ppGWdO6cgEyvuOfQVl7dCRlTdyeSKT3up5DOCMY2p8vM13Q8JtR1Dvr5ZGOduW/QUkvNUZ9sceS2AB7Utv9QJZtvid/AoHnWrdDHGHkGXccn09qpjx2xZTpBRPh5Y7vM1xkqMg4rhmrW4dC+K3RjSMkmdmQcBv1JoiBoB8bZoHuRN0YnFGQ6aZgpQ7R7VVE2WDTJ42T6sJke1WG0+lvxGgxjPC1V7HSLpG8BVh05NWbS/8St224QoBxTije0ivJZseHCqGYEU5torsFe8C/MUPps7OCzcMTg8dcU3C5wzEnPpQOAtRLJYzZPPT9aQYp1rkmI0iHT4qT0Ao+ZdNQS30ELZ2SSqjY9CQDXsV4vf6tYaaSUtnm7rCcEKPSsrK5nR6ekW9pb2kAtbaJY4Y14VR/Ok+oJ3f1kTMhxnANZWViyGmIsjkeSTc5JPAz86Z9pVAt4sCsrKzyLLpvsuM2sreYohyZRl+TW6ygd6BSeEEDoDkVBceAjB61usrjhddMdvWuWJXTjj7xJP5Dj+dZWUr6U8K9LPIbeV93iOFz7Ul1SZ1GAeBW6ymj0SQv0tRKHlfl9xAPpimL+HGKysrbFaISIm65963gEEmt1lWRFmWzkOPnTnT5WJwQPixWVlPERlls2LD+3yqxWmRCxz0WsrKYAxtGKgKOgAppAxIGTWVlA4WX07/AOJtCQpTaOCPbNd93F/4Y/0rVZXHH//Z"
+          alt="Relaxing person"
         />
+        <div class="red-circle"></div>
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <h3><i class="fa-solid fa-dollar-sign"></i>MenicInvestment.ng</h3>
-        </div>
-
-        <div class="footer-columns">
-          <div class="footer-col">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Privacy statement</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Products</h3>
-            <ul>
-              <li><a href="#">Stock Trading</a></li>
-              <li><a href="#">Money Market Fund</a></li>
-              <li><a href="#">Education Trust</a></li>
-              <li><a href="#">UTrace</a></li>
-              <li><a href="#">Nigeria Eurobond Fund</a></li>
-              <li><a href="#">Nigeria Diaspora Trust</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Research</h3>
-            <ul>
-              <li><a href="#">Market News</a></li>
-              <li><a href="#">Pan African Monitor</a></li>
-              <li><a href="#">United Capital website</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col newsletter">
-            <h3>Never miss out on<br />investment opportunities</h3>
-            <p><strong>Join our newsletter</strong></p>
-            <form>
-              <input type="email" placeholder="Email address" required />
-              <button type="submit">Submit</button>
-            </form>
-
-            <div class="social-icons">
-              <p>We are sociable</p>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const animatedElements = document.querySelectorAll(".animate__animated");
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate__fadeInUp");
-            entry.target.style.opacity = 1;
-          }
-        });
-      });
-
-      animatedElements.forEach((el) => {
-        el.style.opacity = 0;
-        observer.observe(el);
-      });
-    </script>
+    </div>
   </body>
 </html>
