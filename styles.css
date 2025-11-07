@@ -113,6 +113,10 @@ nav a {
   margin-top: 10px;
 }
 
+.create {
+  text-decoration: none;
+}
+
 .app-buttons {
   display: flex;
   gap: 20px;
