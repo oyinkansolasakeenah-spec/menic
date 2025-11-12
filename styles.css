@@ -546,7 +546,11 @@ h1 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
   .option-card {
     width: 100%;
   }
@@ -567,7 +571,7 @@ h1 {
     padding: 40px 20px;
     position: static;
     align-items: center;
-    margin: 0;
+    margin: 20px;
     margin-top: 20px;
   }
 }
