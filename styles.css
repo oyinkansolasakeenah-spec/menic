@@ -81,7 +81,7 @@ nav a {
   gap: 4px;
 }
 div span {
-  background-color: white;
+  background-color: rgb(191, 82, 82);
   height: 3px;
   width: 25px;
   margin: 3px 0;
