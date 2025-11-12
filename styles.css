@@ -526,6 +526,8 @@ h1 {
   header {
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px 30px;
+    position: static;
   }
 
   nav ul {
@@ -561,5 +563,5 @@ h1 {
     align-items: flex-start;
   }
 
-  
+
 }
