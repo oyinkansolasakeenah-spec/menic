@@ -29,7 +29,7 @@
         <h3><i class="fa-solid fa-dollar-sign"></i>MenicInvestment.ng</h3>
       </div>
       <nav class="nav">
-        <div class="dropdown">
+        <div class="dropdown" id="dropdown">
           <ul>
             <li class="menic manual-funds">
               <a href="./mutual.html">Mutual fund</a>
@@ -349,7 +349,8 @@
 
     <script>
       const hamburger = document.getElementById("hamburger");
-      const navLink = document.getElementById("nav-link");
+      console.log(hamburger);
+      const navLink = document.querySelector(".dropdown");
 
       hamburger.addEventListener("click", toggleNav);
 
